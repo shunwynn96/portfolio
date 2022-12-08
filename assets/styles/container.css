@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  max-width: 1920px;
+  margin: auto;
+}
+
+#contents {
+  background-color: gray;
+  text-align: center;
+}
+
+#header {
+  background-image: url("../images/liquid-cheese-1.svg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding: 15rem 0 15rem 0;
+}
+
+#header p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+#header span {
+  color: #ffffff;
+}
+
+.showMenu {
+  transform: translateY(0);
+  display: unset;
+}

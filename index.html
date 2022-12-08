@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6c7d03da3d.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous">
+    </script>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./assets/styles/side-nav.css" />
+    <link rel="stylesheet" href="./assets/styles/container.css" />
+    <link rel="stylesheet" href="./assets/styles/project.css" />
+    <link rel="stylesheet" href="./assets/styles/about.css" />
+    <link rel="stylesheet" href="./assets/styles/contact.css" />
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <button class="navDrawer">
+        <i class="menuIcon fas fa-bars"></i>
+      </button>
+      <div class="nav">
+        <div class="top">
+          <div class="logo">
+            <div class="profile-pic">
+              <img src="./assets/images/linkedin-img.png" alt="linkedin profile"/>
+            </div>
+            <div class="info">
+              <h3>Shun Wynn Kok</h3>
+              <p>Frontend Developer</p>
+            </div>
+          </div>
+
+          <div class="middle">
+            <ul>
+              <li><a href="#header"><i class="fas solid fa-home"></i>Intro</a></li>
+              <li><a href="#project"><i class="fas solid fa-th"></i>Projects</a></li>
+              <li><a href="#about"><i class="fas solid fa-user"></i>About Me</a></li>
+              <li><a href="#contact"><i class="fas solid fa-envelope"></i>Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <ul>
+            <li><a href="https://github.com/shunwynn96" target="_blank"><span class="fab fa-github"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/shunwynnkok/"target="_blank"><span class="fab fa-linkedin"></span></a></li>
+          </ul>
+        </div>
+      </div>
+
+    <div id="contents">
+
+      <div id="header">
+        <p>Hi! I'm <span>Shun Wynn Kok</span>, I'm a</p>
+        <p><span>Computer Science</span> graduate.</p>
+      </div>
+
+      <div id="project">
+        <h2>Projects</h2>
+        <div class="project-list">
+
+          <!-- Homestyle Coffee Shop Project -->
+          <div class="card">
+            <img src="./assets/images/homestyle-project.PNG" alt="homestyle project"/>
+            <div class="card-description">
+              <h3>Homestyle Coffee Shop</h3>
+              <div class="card-tags">
+                <p>HTML</p>
+                <p>SCSS</p>
+                <p>React</p>
+                <p>Node</p>
+                <p>Express</p>
+                <p>Contentful (CMS)</p>
+                <p>Stripe</p>
+              </div>
+              <button>
+                <a href="https://homestyle.vercel.app" target="_blank">Visit Site</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Colors Picker Project -->
+          <div class="card">
+            <img src="./assets/images/colors-app-project.png" alt="color picker project"/>
+            <div class="card-description">
+              <h3>Color Picker</h3>
+              <div class="card-tags">
+                <p>HTML</p>
+                <p>SCSS</p>
+                <p>React</p>
+                <p>Node</p>
+                <p>Material-UI</p>
+                <p>dnd-kit</p>
+                <p>emoji-mart</p>
+                <p>chroma-js</p>
+              </div>
+                <button><a href="https://colors-app-plum.vercel.app/" target="_blank">Visit Site</a></button>
+            </div>
+          </div>
+
+          <!-- News App Project -->
+          <div class="card">
+            <img src="./assets/images/News-app-project.png" alt="News app project"/>
+            <div class="card-description">
+              <h3>News App</h3>
+              <div class="card-tags">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>React</p>
+                <p>JavaScript</p>
+                <p>Bootstrap</p>
+              </div>
+                <button><a href="https://the-news-project.herokuapp.com/" target="_blank">Visit Site</a></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="about">
+        <h2>About</h2>
+        <p>
+          I am a Computer Science graduate of Cleveland State University. Throughout my career as a student, 
+          I have worked on multiple projects that have introduced me to several programming languages and concepts. 
+          I enjoy spending my free time utilizing online resources to learn and expand my knowledge in the Computer Science field.
+        </p>
+      </div>
+
+      <div id="contact">
+        <h2>Contact</h2>
+        <form action="https://getform.io/f/9c69c62a-4fd4-43a8-bb3b-e0ef8f7455d2" method="POST">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="email" placeholder="Email">
+          <textarea type="text" name="message" placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+
+* {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: #666;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+::-webkit-scrollbar {
+  background-color: #fff;
+  width: 1em;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #41484c;
+  border: 3px solid #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #41484caf;
+}
