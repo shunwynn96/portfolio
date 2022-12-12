@@ -27,18 +27,20 @@ $(document).ready(function () {
 
 const nav = document.querySelector(".nav");
 // const menuItems = document.querySelectorAll(".menuItem");
-const navDrawer = document.querySelector(".navDrawer");
+const navToggle = document.querySelector(".navToggle");
 const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 
-function toggleMenu(event) {
+function openMenu(event) {
   event.stopPropagation();
   event.preventDefault();
-  nav.classList.add("showMenu");
+  nav.classList.add("show");
+  navToggle.classList.add("hidden");
 }
 
 function closeMenu() {
-  nav.classList.remove("showMenu");
+  nav.classList.remove("show");
+  navToggle.classList.remove("hidden");
 }
 
 // Stops body clicks from closing nav if cliks are inside the nav
@@ -46,6 +48,17 @@ nav.addEventListener("click", function (e) {
   e.stopPropagation();
 });
 
-navDrawer.addEventListener("click", toggleMenu);
-
+navToggle.addEventListener("click", openMenu);
 document.body.addEventListener("click", closeMenu);
+
+// Show "Visit Site" when hovering over a project
+let projects = document.querySelectorAll(".card");
+
+projects.forEach((project) => {
+  let button = project.querySelector(".visit-btn");
+
+  project.addEventListener("mouseover", () =>
+    button.classList.remove("hidden")
+  );
+  project.addEventListener("mouseout", () => button.classList.add("hidden"));
+});

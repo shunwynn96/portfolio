@@ -10,6 +10,7 @@
 }
 
 .card {
+  position: relative;
   background-color: #ffffff;
   box-shadow: 0 0 10px grey;
   border-radius: 5px;
@@ -39,21 +40,56 @@
   font-weight: 400;
 }
 
-.card-description button {
+.visit-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.visit-btn a {
+  align-self: center;
+  letter-spacing: 1px;
+  line-height: 10px;
+  padding: 1rem;
+  /* border: 1px solid rgba(0,180,204,0.4); */
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.visit-btn a:hover {
+  cursor: pointer;
+  background-color: rgba(0,180,204,0.8);
+}
+
+/* .card-description button {
   align-self: flex-end;
   letter-spacing: 1px;
-  height: 2rem;
-  width: 5rem;
-  border: 1px solid rgba(0,180,204,0.4);
-  border-radius: 5px;
-  background-color: rgba(0,180,204,0.2);
+  height: 2.5rem;
+  width: 6rem;
+  border: 1px solid rgba(0,180,204,0.8);
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0,180,204,0.3);
+}
+
+.card-description button a {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .card-description button:hover {
   border: none;
   cursor: pointer;
   background-color: rgba(0,180,204,0.8);
-}
+} */
 
 .card-tags {
   text-align: left;
