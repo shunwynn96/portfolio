@@ -52,7 +52,7 @@ navToggle.addEventListener("click", openMenu);
 document.body.addEventListener("click", closeMenu);
 
 // Show "Visit Site" when hovering over a project
-let projects = document.querySelectorAll(".card");
+let projects = document.querySelectorAll(".project-card");
 
 projects.forEach((project) => {
   let button = project.querySelector(".visit-btn");

@@ -31,3 +31,9 @@
   transform: translateY(0);
   display: unset;
 }
+
+@media screen and (max-width: 450px) {
+  #header p {
+    font-size: 2rem;
+  }
+}

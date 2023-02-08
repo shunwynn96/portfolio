@@ -1,13 +1,168 @@
 #about {
   background-color: #ecf1f1;
   padding: 3rem;
-  height: 1000px;
 }
 
-#about p {
+/* Custom Bullet Points */
+#about ul li::before {
+  content: "\2022";
+  color:rgba(0,180,204,0.6);
+  font-size: 20px;
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1.5em; 
+}
+
+#about ul {
+  list-style: none;
+}
+/* Custom Bullet Points */
+
+.about-summary {
   padding: 1rem 0;
   font-size: 15pt;
   font-weight: 300;
   line-height: 1.75em;
   color: #888;
+}
+
+.grid-container {
+  display: grid;
+  text-align: left;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 3rem;
+}
+
+.grid-container h2 {
+  font-size: 25px;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+/* EDUCATION STYLES */
+.education-container {
+  grid-column: span 2;
+}
+
+.education {
+  box-shadow:-4px 4px 10px rgba(0,0,0,.2);
+  background-color: white;
+  padding: 1rem 1rem 2rem 1.5rem;
+}
+
+.education p {
+  font-weight: 300;
+  line-height: 1.75em;
+}
+
+.education ul {
+  padding-top: 0.5rem;
+}
+
+.education ul li span {
+  font-weight: 100;
+}
+
+.degree {
+  font-size: 20px;
+  font-weight: 800;
+  padding-right: 1rem;
+  margin-right: 0.7rem;
+  border-right: 2px solid rgba(0,180,204,0.6);
+}
+
+.college {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+/* EDUCATION STYLES */
+
+/* SKILLS STYLES */
+
+.skills-container {
+  grid-row: span 2;
+}
+
+.skills {
+  background-color: white;
+  box-shadow:-4px 4px 10px rgba(0,0,0,.2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 2rem 2rem 1.5rem;
+}
+
+.skills p {
+  padding: 1.5rem 0 0.5rem 0.3rem;
+  font-size: 16px;
+  font-weight: 600;
+  grid-column: span 2;
+}
+
+.skills-grid-1 {
+  grid-row: span 2;
+}
+
+/* SKILLS STYLES */
+
+/* CERTIFICATE STYLES */
+
+.certificate-container {
+}
+
+.certificate {
+  background-color: white;
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  box-shadow:-4px 4px 10px rgba(0,0,0,.2);
+}
+
+.certificate p {
+  padding-bottom: 1rem;
+  font-weight: 100;
+}
+
+.certificate p span {
+  margin-right: 1rem;
+  padding-right: 1rem;
+  font-weight: 600;
+  font-size: 13pt;
+  border-right: 2px solid rgba(0,180,204,0.6);
+}
+
+/* CERTIFICATE STYLES */
+
+/* LANGUAGE STYLES */
+
+.language-container {
+  grid-row: span 2;
+}
+
+.language {
+  padding: 1rem;
+  background-color: white;
+  box-shadow:-4px 4px 10px rgba(0,0,0,.2);
+}
+
+/* LANGUAGE STYLES */
+
+@media screen and (max-width: 1250px) {
+  .skills-container {
+    grid-column: span 2;
+  }
+  .certificate-container {
+    grid-column: span 2;
+  }
+  .language-container {
+    grid-column: span 2;
+  } 
+}
+
+@media screen and (max-width: 450px) {
+  #about {
+    padding: 0.5rem;
+  }
 }

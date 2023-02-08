@@ -8,6 +8,10 @@
   z-index: 99;
 }
 
+.navToggle {
+  display: none;
+}
+
 .top {
   height: 90vh;
 }
