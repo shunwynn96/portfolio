@@ -73,12 +73,13 @@
 
 .bottom li {
   display: inline;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 
 .bottom span {
-  color: #41484c;
-  font-size: 25px;
+  /* color: #41484c; */
+  color: rgb(169, 168, 168);
+  font-size: 30px;
 }
 
 .bottom span:hover {
